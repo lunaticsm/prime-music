@@ -77,4 +77,4 @@ async def init():
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("PrimeMusic").info("Stopping Asya Music Bot! GoodBye")
+    LOGGER("AsyaMusic").info("Stopping Asya Music Bot! GoodBye")
