@@ -28,7 +28,7 @@ async def init():
         and not config.STRING9
         and not config.STRING10
     ):
-        LOGGER("PrimeMusic").error(
+        LOGGER("AsyaMusic").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
@@ -36,7 +36,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("PrimeMusic").warning(
+        LOGGER("AsyaMusic").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
     try:
@@ -71,10 +71,10 @@ async def init():
     except:
         pass
     await Prime.decorators()
-    LOGGER("PrimeMusic").info("Prime Music Bot Started Successfully")
+    LOGGER("PrimeMusic").info("Asya Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("PrimeMusic").info("Stopping Prime Music Bot! GoodBye")
+    LOGGER("PrimeMusic").info("Stopping Asya Music Bot! GoodBye")
